@@ -105,20 +105,6 @@ class QueryBuilder(BrowserView):
                    sort_on=None, sort_order=None, limit=0, brains=False,
                    custom_query=None):
         """Parse the (form)query and return using multi-adapter"""
-        # Reproduce path behaviours of Collection
-        # See p.a.contenttypes.behaviours.collection.Collection
-        if query:
-            has_path_criteria = any(
-                (criteria['i'] == 'path')
-                for criteria in query
-            )
-            if not has_path_criteria:
-                query.append({
-                    'i': 'path',
-                    'o': 'plone.app.querystring.operation.string.path',
-                    'v': '/',
-                })
-
         parsedquery = queryparser.parseFormquery(
             self.context, query, sort_on, sort_order)
 
@@ -156,9 +142,6 @@ class QueryBuilder(BrowserView):
             parsedquery['b_size'] = b_size
         elif limit:
             parsedquery['sort_limit'] = limit
-
-        if 'path' not in parsedquery:
-            parsedquery['path'] = {'query': ''}
 
         if isinstance(custom_query, dict):
             # Update the parsed query with an extra query dictionary. This may
