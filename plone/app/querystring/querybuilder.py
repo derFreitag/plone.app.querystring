@@ -108,9 +108,6 @@ class QueryBuilder(BrowserView):
         elif limit:
             parsedquery['sort_limit'] = limit
 
-        if 'path' not in parsedquery:
-            parsedquery['path'] = {'query': ''}
-
         if isinstance(custom_query, dict):
             # Update the parsed query with extra query dictionary. This may
             # override parsed query options.
