@@ -6,7 +6,8 @@ Changelog
 
 Breaking changes:
 
-- *add item here*
+- Remove another place where path was being added.
+  [gforcada]
 
 New features:
 
