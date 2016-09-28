@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.3.15.post1 (unreleased)
+1.3.15.post1 (2016-09-28)
 -------------------------
 
 - Remove another place where path was being added.
