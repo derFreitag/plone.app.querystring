@@ -4,24 +4,14 @@ Changelog
 1.3.15.post1 (unreleased)
 -------------------------
 
-- Nothing changed yet.
-
+- Remove another place where path was being added.
+  [gforcada]
 
 1.3.15.post0 (2016-07-27)
 -------------------------
 
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
-
-Bug fixes:
-
-- *add item here*
-
+- Remove another place where path was being added.
+  [gforcada]
 
 1.3.15 (2016-05-25)
 -------------------
