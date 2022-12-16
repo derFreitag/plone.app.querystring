@@ -8,6 +8,12 @@ Changelog
 
 .. towncrier release notes start
 
+1.6.1.post1 (2022-12-16)
+------------------------
+
+No significant changes.
+
+
 1.6.1.post0 (2022-12-16)
 ------------------------
 
