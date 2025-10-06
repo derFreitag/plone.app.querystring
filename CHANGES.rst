@@ -8,6 +8,16 @@ Changelog
 
 .. towncrier release notes start
 
+2.1.4.post0 (2025-10-06)
+------------------------
+
+Breaking changes:
+
+
+- Remove another place where path was being added.
+  [gforcada] (#1)
+
+
 2.1.4 (2025-09-11)
 ------------------
 
