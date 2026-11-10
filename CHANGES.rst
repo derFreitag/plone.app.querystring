@@ -8,6 +8,16 @@ Changelog
 
 .. towncrier release notes start
 
+3.1.1.post0 (2026-11-10)
+------------------------
+
+Breaking changes:
+
+
+- Remove another place where path was being added.
+  [gforcada] (#1)
+
+
 3.1.1 (2026-11-08)
 ------------------
 
